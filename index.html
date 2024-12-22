@@ -72,6 +72,13 @@
       li span {
         font-weight: bold;
       }
+      .contact-button-container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       .contact-button {
         display: inline-block;
         background-color: #000;
@@ -81,8 +88,9 @@
         text-decoration: none;
         border-radius: 30px;
         margin-top: 20px;
-
-        display: block; /* Change from inline-block to block */
+        max-width: 250px; /* Ensure it doesn't exceed the container's width */
+        width: 100%; /* Make the button responsive */
+        box-sizing: border-box; /* Ensure padding is included in the width calculation */
       }
     </style>
   </head>
@@ -280,54 +288,31 @@
         </div>
         <div class="content">
           <p>
-            Click on the three-dot menu in the chat or story room and select
-            <b>Report</b>. Fill out the form and submit.
+            If you encounter inappropriate content, click on the <b>Report</b>
+            option and select the issue you wish to report.
           </p>
         </div>
       </div>
 
-      <div class="support-item">
-        <div class="title">
-          <span>How does the reputation system work?</span>
-          <div class="arrow"></div>
-        </div>
-        <div class="content">
-          <p>
-            Your <b>reputation score</b> increases when others positively rate
-            your stories or contributions. Scores reflect your engagement and
-            credibility.
-          </p>
-        </div>
+      <!-- Centered Contact Us Button -->
+      <!-- Centered Contact Us Button with email link -->
+      <!-- Centered Contact Us Button with email link and target="_blank" -->
+      <!-- Centered Contact Us Button with Gmail link -->
+      <div class="contact-button-container">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=support@storvii.com&su."
+          class="contact-button"
+          target="_blank"
+          >Contact Us</a
+        >
       </div>
-
-      <div class="support-item">
-        <div class="title">
-          <span>How do I update the app?</span>
-          <div class="arrow"></div>
-        </div>
-        <div class="content">
-          <p>
-            Visit the Google Play Store or Apple App Store, search for
-            <b>Storvii</b>, and click <b>Update</b>.
-          </p>
-        </div>
-      </div>
-
-      <!-- Contact Us Button -->
-      <a
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=support@storvii.com&su=Customer%20Support%20Query&body=Please%20enter%20your%20query%20here."
-        target="_blank"
-        class="contact-button"
-        >Contact Us</a
-      >
     </div>
 
     <script>
-      const supportItems = document.querySelectorAll(".support-item .title");
+      const supportItems = document.querySelectorAll(".support-item");
 
-      supportItems.forEach((title) => {
-        title.addEventListener("click", () => {
-          const item = title.parentElement;
+      supportItems.forEach((item) => {
+        item.querySelector(".title").addEventListener("click", () => {
           item.classList.toggle("active");
         });
       });
