@@ -17,7 +17,6 @@
         padding: 0;
         background-color: #f5e8d8;
       }
-     
 
       .support {
         max-width: 400px;
@@ -73,11 +72,21 @@
       li span {
         font-weight: bold;
       }
+      .contact-button {
+        display: inline-block;
+        background-color: #000;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 30px;
+        margin-top: 20px;
+
+        display: block; /* Change from inline-block to block */
+      }
     </style>
   </head>
   <body>
-   
-
     <div class="support">
       <div class="support-item">
         <div class="title">
@@ -89,6 +98,19 @@
             <b>Storvii</b> is a storytelling platform where users can share
             personal stories, join virtual story rooms, and connect through
             <b>voice chats</b> and <b>instant messaging</b>.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How can I contact customer support?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Go to the <b>Help & Support</b> section in the app and click
+            <b>Contact Us</b> button below to send a query or report an issue.
           </p>
         </div>
       </div>
@@ -291,31 +313,13 @@
         </div>
       </div>
 
-      <div class="support-item">
-        <div class="title">
-          <span>What devices are supported?</span>
-          <div class="arrow"></div>
-        </div>
-        <div class="content">
-          <p>
-            Storvii supports multiple <b>languages</b>. You can set your
-            preferred language in the app settings.
-          </p>
-        </div>
-      </div>
-
-      <div class="support-item">
-        <div class="title">
-          <span>How can I contact customer support?</span>
-          <div class="arrow"></div>
-        </div>
-        <div class="content">
-          <p>
-            Go to the <b>Help & Support</b> section in the app and click
-            <b>Contact Us</b> to send a query or report an issue.
-          </p>
-        </div>
-      </div>
+      <!-- Contact Us Button -->
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=support@storvii.com&su=Customer%20Support%20Query&body=Please%20enter%20your%20query%20here."
+        target="_blank"
+        class="contact-button"
+        >Contact Us</a
+      >
     </div>
 
     <script>
