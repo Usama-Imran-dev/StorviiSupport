@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Outfit", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5e8d8;
+      }
+      header {
+        background-color: #f5e8d8; /* Change to a more vibrant color */
+        padding: 15px 0; /* Increase padding for a more prominent header */
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for emphasis */
+      }
+
+      header h1 {
+        color: black; /* Make the text stand out with white color */
+        margin: 0;
+        font-size: 30px; /* Increase font size for prominence */
+        font-weight: bold;
+      }
+
+      .support {
+        max-width: 400px;
+        margin: 20px auto;
+      }
+      .support h2 {
+        text-align: center;
+        color: #333;
+      }
+      .support-item {
+        border-bottom: 1px solid #000;
+        padding: 20px;
+        cursor: pointer;
+      }
+      .support-item:last-child {
+        border-bottom: none;
+      }
+      .support-item .title {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      .support-item .title span {
+        flex-grow: 1;
+        font-weight: bold;
+      }
+      .support-item .title .arrow {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #000;
+        transition: transform 0.3s;
+      }
+      .support-item.active .title .arrow {
+        transform: rotate(180deg);
+      }
+      .support-item .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+      }
+      .support-item.active .content {
+        max-height: fit-content;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 15px;
+      }
+      li span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>FAQ</h1>
+    </header>
+
+    <div class="support">
+      <div class="support-item">
+        <div class="title">
+          <span>What is Storvii?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            <b>Storvii</b> is a storytelling platform where users can share
+            personal stories, join virtual story rooms, and connect through
+            <b>voice chats</b> and <b>instant messaging</b>.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do I create an account?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Open the app, click <b>Sign Up</b> and follow the steps to register
+            using your <b>email</b> or <b>social media</b> account.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do I reset my password?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Click <b>Forgot Password</b> on the login screen, enter your
+            <b>email</b>, and follow the instructions sent to your inbox.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do I edit my profile?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Go to the <b>Profile</b> section, click the <b>Edit</b> button, and
+            make the desired changes. Save your updates when done.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>Can I delete my account?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Yes, go to <b>Settings &gt; Account &gt; Delete Account</b>. Note
+            that this action is irreversible.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How can I create a story room?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Navigate to the <b>Create Room</b> option, set a <b>theme</b> or
+            <b>topic</b>, and choose whether the room is <b>public</b> or
+            <b>private</b>.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>Can I change the privacy of my story room after creation?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Yes, navigate to the <b>room settings</b>, and you can switch
+            between <b>public</b> and <b>private</b> options anytime.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do I invite someone to my private story room?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            In the room settings, select <b>Invite Participants</b>, and share
+            the invitation link or directly add users by their <b>usernames</b>.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do I delete a story room?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Go to the <b>room settings</b>, select <b>Delete Room</b>, and
+            confirm. Note that this action is irreversible.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>Can I host a live event on Storvii?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Yes, you can schedule and host live storytelling sessions by
+            selecting the <b>Live Event</b> option in the room settings.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do I follow another user?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Visit the user's <b>profile</b> and click the <b>Follow</b> button
+            to stay updated on their activities and stories.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How can I provide feedback on a story?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            At the end of a story, use the <b>Rate and Review</b> option to
+            provide feedback and help improve the storytelling experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do notifications work?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            <b>Notifications</b> alert you about activities such as new
+            followers, scheduled story sessions, and messages. You can customize
+            these in the notification settings.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do I report inappropriate content?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Click on the three-dot menu in the chat or story room and select
+            <b>Report</b>. Fill out the form and submit.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How does the reputation system work?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Your <b>reputation score</b> increases when others positively rate
+            your stories or contributions. Scores reflect your engagement and
+            credibility.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How do I update the app?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Visit the Google Play Store or Apple App Store, search for
+            <b>Storvii</b>, and click <b>Update</b>.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>What devices are supported?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Storvii supports multiple <b>languages</b>. You can set your
+            preferred language in the app settings.
+          </p>
+        </div>
+      </div>
+
+      <div class="support-item">
+        <div class="title">
+          <span>How can I contact customer support?</span>
+          <div class="arrow"></div>
+        </div>
+        <div class="content">
+          <p>
+            Go to the <b>Help & Support</b> section in the app and click
+            <b>Contact Us</b> to send a query or report an issue.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const supportItems = document.querySelectorAll(".support-item .title");
+
+      supportItems.forEach((title) => {
+        title.addEventListener("click", () => {
+          const item = title.parentElement;
+          item.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
